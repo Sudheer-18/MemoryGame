@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ value, isFlipped, isMatched, onClick }) => 
     <div
       onClick={onClick}
       className={`
-        w-24 h-32 perspective-1000 cursor-pointer
+        w-16 h-24 sm:w-20 sm:h-28 md:w-24 md:h-32 perspective-1000 cursor-pointer
         transform transition-all duration-500 ease-in-out
         hover:scale-105
         ${isMatched ? 'animate-fadeOut invisible' : ''}
@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({ value, isFlipped, isMatched, onClick }) => 
         />
         <div
           className="absolute w-full h-full bg-white rounded-lg backface-hidden rotate-y-180
-            flex items-center justify-center text-3xl font-bold text-indigo-600 
+            flex items-center justify-center text-xl sm:text-2xl md:text-3xl font-bold text-indigo-600 
             shadow-lg border-2 border-indigo-200
             animate-appear"
         >
